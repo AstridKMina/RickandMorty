@@ -11,7 +11,6 @@
 }
 
 
-
 .App-header img {
   height: 31rem;
   width: 97.9%;
@@ -51,15 +50,9 @@ button {
 
 
 .character {
-  /* display: flex;
-  text-align: left; */
-  /* flex-direction: column; */
-  /* background-color: bisque; */
-  /* width: 35rem; */
-  /* height: 10rem; */
   border-radius: 2rem;
   width: 95%;
-  /* height: 10rem; */
+
 
 }
 
@@ -82,17 +75,7 @@ button {
 }
 
 
-/* .status2  {
-  background-color: chartreuse;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-  border: none;
-} */
-
 .status1 {
-  /* background-color: red; */
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
@@ -101,14 +84,7 @@ button {
 
 }
 
-/* .status3 {
-   background-color: grey;
-   width: 1rem;
-   height: 1rem;
-   border-radius: 50%;
-   margin-right: 0.5rem;
-   border: none;
-}  */
+
 
 .character img {
   width: 100%;
@@ -123,10 +99,7 @@ button {
   flex-wrap: wrap;
   background-color: rgba(230, 213, 213, 0.27);
   flex-basis: 25%;
-  /* min-width: 40%; */
   max-width: 100%;
-  /* flex-grow: 1; */
-  /* height: 15rem; */
   border: 0.1rem solid black;
   margin: 2rem;
   border-radius: 2rem 0;
@@ -135,12 +108,6 @@ button {
 }
 
 .characterCard1 {
-  /* -moz-column-count: 2;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
-  column-count: 2;
-  column-gap: 2rem; */
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;

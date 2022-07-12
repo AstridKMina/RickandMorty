@@ -9,8 +9,6 @@ const Character = ({ url }) => {
     const [status, setStatus] = useState("green")
 
 
-
-
     useEffect(() => {
         axios.get(url).then(res =>
             setCharacters(res.data),
@@ -19,15 +17,26 @@ const Character = ({ url }) => {
 
     }, []);
 
+    const theStatus = () => {
 
+        let color = ""
+        if (characters?.status === "Alive") {
+            color = "#b4e24d"
 
+        } else if (characters?.status === "Dead") {
+            color = "#ff0000"
+        } else {
+            color = "#808080"
+        }
+        return color;
+    }
     return (
 
         <div className='character' >
             <div className='characterLeft'>
                 <img src={characters?.image} alt="character.img" />
                 <div className='status'>
-                    <button className="status1 " ></button>
+                    <button className="status1 " style={{backgroundColor: theStatus()}}></button>
                     <h4>Status: {characters?.status} </h4>
                 </div>
             </div>
