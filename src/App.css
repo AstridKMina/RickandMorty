@@ -10,16 +10,18 @@
 
 }
 
-
-.App-header img {
+.App-header video {
   height: 31rem;
   width: 97.9%;
   object-fit: inherit;
   border: 1vw black solid;
+  opacity: 60%;
 }
+
 
 h1 {
   font-size: 8vw;
+  -webkit-text-stroke: 1px rgb(115, 238, 49);
 }
 
 button {
@@ -28,31 +30,71 @@ button {
 }
 
 .location-name {
-  font-size: 2.5vw;
+  font-size: 1.5rem;
 }
 
 .location {
-  width: 50%;
-  height: 5rem;
+
   display: flex;
+  flex-wrap: wrap;
+  /* flex-grow: 1; */
   justify-content: space-between;
-  font-size: 100%;
-  background-image: url("https://fondosmil.com/fondo/27355.jpg");
-  background-position: 50% 40%;
+  font-size: 1.2rem;
   padding: 0.5rem;
   margin: 0 auto;
+  line-height: 1;
+  /* vertical-align: middle; */
 
 }
 
 .loca {
+  flex-basis: 50%;
   margin-bottom: 2rem;
+  background-image: url("https://fondosmil.com/fondo/27355.jpg");
+  background-position: 50% 40%;
+  max-width: 50%;
+  min-width: 20rem;
+  margin: 0 auto;
+}
+
+.locaItems {
+  display: flex;
+  flex-basis: 15rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.characterCard {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(230, 213, 213, 0.27);
+  flex-basis: 25%;
+  min-width: 15rem;
+  flex-grow: 1;
+  max-width: 20rem;
+  margin: 2rem;
+  border-radius: 2rem 0;
+  height: 25rem;
+  /* box-shadow: 3px 3px 25px 8px rgba(255 , 255, 255, 0.8); */
+  box-shadow: 3px 3px 25px 8px rgba(115, 238, 49,0.5);
+
 }
 
 
-.character {
+.characterCard1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content:space-evenly; 
+
+}
+
+.character{
   border-radius: 2rem;
   width: 95%;
-
 
 }
 
@@ -85,33 +127,11 @@ button {
 }
 
 
-
 .character img {
   width: 100%;
   height: 15rem;
   object-fit: inherit;
   border-radius: 2rem 0;
-
-}
-
-.characterCard {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(230, 213, 213, 0.27);
-  flex-basis: 25%;
-  max-width: 100%;
-  border: 0.1rem solid black;
-  margin: 2rem;
-  border-radius: 2rem 0;
-  height: 25rem;
-
-}
-
-.characterCard1 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  justify-content: center;
 
 }
 
@@ -133,3 +153,4 @@ input {
   text-align: center;
   font-family: 'Creepster', cursive;
 }
+

@@ -11,7 +11,7 @@ const RickLocation = () => {
     const [urls, setUrls] = useState([])
 
 
-   
+
 
     useEffect(() => {
 
@@ -38,14 +38,20 @@ const RickLocation = () => {
 
     const handleSubmit = (e) => { e.prevenDefault() }
 
-   
+
 
     return (
 
         <div>
 
             <div className="App-header">
-                <img src="https://cdnb.artstation.com/p/assets/images/images/022/060/919/large/win-dolores-ricknmorty-f.jpg?1573981882" alt="" />
+                {/* <img src="https://cdnb.artstation.com/p/assets/images/images/022/060/919/large/win-dolores-ricknmorty-f.jpg?1573981882" alt="" /> */}
+
+                <video src="./src/assets/RickandMorty.mp4" autoPlay loop muted 
+                poster=' https://cdnb.artstation.com/p/assets/images/images/022/060/919/large/win-dolores-ricknmorty-f.jpg?1573981882'>
+
+                </video>
+               
             </div>
 
             <h1>Rick and Morty</h1>
@@ -56,9 +62,15 @@ const RickLocation = () => {
             <h4 className='location-name'>{location?.name}</h4>
             <div className='loca'>
                 <div className='location'>
-                    <h4 >Type:{location?.type}</h4>
-                    <h4 >Dimension:{location?.dimension}</h4>
-                    <h4 >Population:{location?.residents?.length}</h4>
+                    <div className='locaItems'>
+                        <h4 >Type:{location?.type}</h4>
+                    </div>
+                    <div className='locaItems'>
+                        <h4 >Dimension:{location?.dimension}</h4>
+                    </div>
+                    <div className='locaItems'>
+                        <h4 >Population:{location?.residents?.length}</h4>
+                    </div>
                 </div>
             </div>
             <h2>Residents</h2>
